@@ -1,0 +1,117 @@
+.Tabs-pane{
+    color: aliceblue;
+}
+.wexp {
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 30rem;
+    margin-bottom: 8rem;
+    margin-top: 18rem;
+    margin-bottom: 13rem;
+    /* scroll view */
+    padding-top: 3rem;
+  }
+  /* left side */
+  .awesome-wexp {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* gap: 20px; */
+  }
+  
+  .text-wexp > :nth-child(1) {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+   
+  }
+  .text-wexp > :nth-child(2) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .text-wexp > :nth-child(3) {
+    color: var(--gray);
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+  .s-button {
+    width: 8rem;
+    height: 2rem;
+    margin-top: 1rem;
+  }
+  /* right sided */
+  .text-wexp{
+    display: flex;
+    gap:1rem
+  }
+  .content {
+    margin-left: 50px;
+    padding-top: 0px;
+  }
+  .MuiTabs-flexContainer{
+    gap:4rem;
+  }
+  .container>span{
+    font-size: 11px;
+    margin-top: -20px;
+    display: flex;
+  }
+  .tech{
+    padding: auto;
+  }
+  .tech>p{
+    font-size: 14px;
+    padding-top: 0px;
+    margin-top: 2px;
+  }
+  .tech>li{
+    /* padding: 10px;
+     */
+     margin-top: 25px;
+  }
+  
+  .techChild>li{
+    display: inline;
+    padding: 5px;
+    font-size: 11px;
+    color: orange;
+    padding-top: -15px;
+  }
+  .techChild>li>a{
+    color: blue;
+    font-size: 11px;
+  }
+  .techChild{
+    margin-top: -15px;
+  }
+  .techChild > :nth-child(1) {
+    font-family: "Gumela";
+    font-weight: normal;
+    font-size: 14px;
+    color: aliceblue;
+
+  }
+ 
+  
+ 
+  
+  @media screen and (max-width: 480px) {
+    .wexp {
+      margin-top: 0;
+      flex-direction: column;
+      gap: 5rem;
+      height: 66rem;
+      padding: 0;
+    }
+  
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 17rem;
+    }
+    .cards > * {
+      position: static;
+    }
+  }
+  

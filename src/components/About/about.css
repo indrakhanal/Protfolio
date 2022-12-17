@@ -1,0 +1,135 @@
+.about {
+    padding: 0px 3rem 0 3rem;
+    padding-top: 0px;
+    display: flex;
+    height: 10rem;
+    margin-bottom: 8rem;
+    margin-top: 0rem;
+    margin-bottom: 5rem;
+    padding-top: 5rem;
+    gap: 5rem;
+  }
+  /* left side */
+  .about-awesome {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+  }
+  
+  .about-awesome > :nth-child(1) {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .about-awesome > :nth-child(2) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .about-awesome > :nth-child(3) {
+    color: var(--gray);
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+  .s-button {
+    width: 8rem;
+    height: 2rem;
+    margin-top: 1rem;
+  }
+  /* right sided */
+  .about-cards {
+    position: relative;
+  }
+  .about-cards > * {
+    position: absolute;
+  
+  }
+  .about-cards{
+    transition: transform .8s; /* Animation */
+  
+  }
+  
+  .about-cards:hover{
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    /* background-color: aliceblue; */
+    border-radius: 10px 15px;
+    box-shadow: 5px;
+    box-shadow: 10px 5px 5px grey;
+  }
+  
+  /* blur */
+  .s-blur2 {
+    left: 14rem;
+    top: 8rem;
+  }
+  
+  .s-blur1 {
+    top: 13rem;
+    left: -18rem;
+  }
+
+  .info {
+    text-decoration: none;
+    padding: 10px;
+    transition: transform .8s; /* Animation */
+    /* width: 200px; */
+    height: 285px;
+    margin: 0 auto;
+    gap: -2rem;
+
+  }
+  .info > span {
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--gray);
+    margin-top: 10px;
+  }
+  .info >span >li{
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--gray);
+    margin-top: 10px; 
+    list-style: "👉🏼";
+    margin-left: 20px;
+  }
+  .info>li{
+    list-style: "👉🏼";
+    margin: 20px;
+  }
+
+  .info>li>span>small{
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--gray);
+    margin-top: 10px; 
+    margin-left: 17px;
+  }
+
+  .info:hover {
+    transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    /* background-color: aliceblue; */
+    border-radius: 10px 15px;
+    box-shadow: 5px;
+    box-shadow: 1px 0px 4px 0.1em gray, -0.4em 0 .4em gray
+  }
+  
+  @media screen and (max-width: 480px) {
+    .about {
+      margin-top: 80px;
+      flex-direction: column;
+      gap: 5rem;
+      height: 66rem;
+      padding: 0;
+    }
+  
+    .about-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 17rem;
+    }
+    .about-cards > * {
+      position: static;
+    }
+  }
+  

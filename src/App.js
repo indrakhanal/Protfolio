@@ -8,6 +8,9 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Testimonial from "./components/Testimonials/Testimonial";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import LabTabs from "./components/Tabbar/tabs";
+import About from "./components/About/aboutme";
+import WorkExperience from "./components/WorkExperience/index"
 import { useContext } from "react";
 import { themeContext } from "./Context";
 function App() {
@@ -23,11 +26,14 @@ function App() {
     >
       <Navbar />
       <Intro />
-      <Services />
+      <About />
       <Experience />
+      <LabTabs />
+      <WorkExperience />
+      <Services />
       <Works />
       <Portfolio />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Contact />
       <Footer />
     </div>

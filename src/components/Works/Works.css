@@ -41,6 +41,8 @@
 }
 
 .w-mainCircle {
+  transform: scale(0.6);
+  transition: 0.4s ease-in-out;
   left: 9rem;
   position: relative;
   width: 18rem;
@@ -91,7 +93,19 @@
 
 .w-secCircle > img {
   transform: scale(0.6);
+  transition: 0.3s ease-in-out;
+  border-radius: 100%;
+  /* box-shadow: -1px -7px 8px black; */
+  box-shadow: 0 0 14px 3px black;
+  width: 120px;
 }
+
+.w-secCircle >img:hover{
+  width: 130px;
+  box-shadow: 15px 0 9px 0px black;
+
+}
+
 
 .w-backCircle {
   position: absolute;

@@ -1,15 +1,22 @@
 .floatingDiv {
   justify-content: space-around;
-  background: white;
+  background:  #ecf0f1 ;
   box-shadow: var(--boxShadow);
   border-radius: 17px;
   display: flex;
   align-items: center;
   padding: 0px 28px 0px 0px;
-  height: 4.5rem;
+  height: 4rem;
+  transition: transform .8s; /* Animation */
+  margin-right: 218px;
+
 }
 .floatingDiv > img {
   transform: scale(0.4);
+}
+.floatingDiv > img.python {
+  width: 160px;
+  height: 174px;
 }
 .floatingDiv > span {
   font-family: sans-serif;
@@ -17,4 +24,10 @@
   /* yahan ye color add kia hy bad mein dark mode k waqt */
   color: black;
 }
-
+.floatingDiv:hover{
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  /* background-color: aliceblue; */
+  border-radius: 10px 15px;
+  box-shadow: 5px;
+  box-shadow: 10px 5px 5px grey;
+}

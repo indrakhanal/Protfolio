@@ -12,16 +12,17 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_2mu5xtl",
-        "template_m5udu2c",
+        "service_c1uuy7o",
+        "template_vf971ik",
         form.current,
-        "VLwg1ltOWvnCYAiK_"
+        "kHylZ7w7Wj_y0QGAp"
       )
       .then(
         (result) => {
           console.log(result.text);
           setDone(true);
-          form.reset();
+          e.target.reset();
+          
         },
         (error) => {
           console.log(error.text);
@@ -42,15 +43,17 @@ const Contact = () => {
             style={{ background: "#ABF1FF94" }}
           ></div>
         </div>
+
+        
       </div>
       {/* right side form */}
       <div className="c-right">
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="user_name" className="user"  placeholder="Name"/>
-          <input type="email" name="user_email" className="user" placeholder="Email"/>
+          <input type="text" name="from_name" className="user"  placeholder="Name"/>
+          <input type="email" name="to_name" className="user" placeholder="Email"/>
           <textarea name="message" className="user" placeholder="Message"/>
           <input type="submit" value="Send" className="button"/>
-          <span>{done && "Thanks for Contacting me"}</span>
+          <span>{done && "Thanks for Contacting me ❤❤"}</span>
           <div
             className="blur c-blur1"
             style={{ background: "var(--purple)" }}

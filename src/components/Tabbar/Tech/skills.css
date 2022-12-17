@@ -1,0 +1,100 @@
+  .wrapper {
+    display: flex;
+    grid-row: 1;
+    grid-template-columns: 150px 150px 150px;
+    height: 150px;
+    max-height: 245px;
+    grid-gap: 15px;
+    background-color: black;
+    color: #444;
+    border-radius: 13px;
+    padding: 30px;
+  }
+  .lang{
+    margin-left: 150px;
+
+    
+  }
+  .tools{
+    margin-left: 100px;
+  }
+  
+  .box {
+    background-color: white;
+    color: black;
+    height: 100px;
+    border-radius: 17px;
+    padding: 25px;
+    font-size: 0%;
+    transition: all 0.5s ease-in-out;
+    gap: 5rem;
+  }
+  .box>img{
+    width: 100px;
+    height: 80px;
+    border-radius: 7px;
+    margin-left: 15px;
+  }
+  .box>span{
+    margin-left: 30px;
+  }
+  .box:hover{
+    transform: scale(1.04); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    /* background-color: aliceblue; */
+    border-radius: 10px 15px;
+    box-shadow: 5px;
+    box-shadow: 10px 5px 5px grey;
+  }
+  .e{
+   width: 193px;
+  }
+  .d{
+   width: 193px;
+  }
+ 
+  .common {
+    background-color: white;
+    color: black;
+    height: 100px;
+    border-radius: 17px;
+    padding: 25px;
+    font-size: 0%;
+    transition: all 0.5s ease-in-out;
+    width: 135px;
+  }
+  @media screen and (max-width: 767px) {
+    .wrapper {
+      display: flex;
+      grid-row: 1;
+      grid-template-columns: 50px 50px 50px;
+      height: 104px;
+      max-height: 104px;
+      grid-gap: 15px;
+      background-color: black;
+      color: #444;
+      border-radius: 3px;
+      padding: 0px;
+      overflow: scroll;
+    }
+    .box {
+      background-color: white;
+      color: black;
+      height: 104px;
+      border-radius: 7px;
+      padding: 0px;
+      font-size: 0%;
+      transition: all 0.5s ease-in-out;
+      gap: 5rem;
+    }
+    .MuiTabs-flexContainer{
+      overflow: scroll;
+    }
+    .lang{
+      margin-left: 0px;
+  
+      
+    }
+    .tools{
+      margin-left: 0px;
+    }
+  }

@@ -2,12 +2,18 @@ import React from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 import { Link } from "react-scroll";
+import Resume from './resume.pdf';
+import myimage from '../../img/me2.jpg'
+
 const navbar = () => {
   return (
     <div className="n-wrapper" id="Navbar">
       {/* left */}
       <div className="n-left">
-        <div className="n-name">Andrew</div>
+        <div className="n-name">
+          <img src={myimage} />
+          <span>IndraKhanal</span>
+        </div>
         <Toggle />
       </div>
       {/* right */}
@@ -20,13 +26,13 @@ const navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="services" spy={true} smooth={true}>
-                Serivces
+              <Link to="about" spy={true} smooth={true}>
+                About
               </Link>
             </li>
             <li>
-              <Link to="works" spy={true} smooth={true}>
-                Experience
+              <Link to="tabs" spy={true} smooth={true}>
+                Skils
               </Link>
             </li>
             <li>
@@ -39,11 +45,14 @@ const navbar = () => {
                 Testimonial
               </Link>
             </li>
+            <li>
+              <Link to="contact" spy={true} smooth={true}>
+                Contact
+              </Link>
+            </li>
           </ul>
+          <hr/>
         </div>
-        <Link to="contact" spy={true} smooth={true}>
-        <button className="button n-button">Contact</button>
-        </Link>
       </div>
     </div>
   );

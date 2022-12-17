@@ -1,11 +1,9 @@
 import React, { useContext } from "react";
 import "./Intro.css";
-import Vector1 from "../../img/Vector1.png";
-import Vector2 from "../../img/Vector2.png";
-import boy from "../../img/boy.png";
+import boy from "../../img/me.png";
 import glassesimoji from "../../img/glassesimoji.png";
-import thumbup from "../../img/thumbup.png";
-import crown from "../../img/crown.png";
+import thumbup from "../../img/react.svg";
+import crown from "../../img/python.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
@@ -13,6 +11,8 @@ import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import Resume from '../Navbar/resume.pdf';
+
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -27,34 +27,46 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
-          <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Andrew Thomas</span>
-          <span>
-            Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work
-          </span>
+          <span style={{ color: darkMode ? "white" : "" }}>HI! I Am</span>
+          <span>INDRA KHANAL</span>
+            <div className="zoom">
+              <span>
+            Experienced Full Stack Python Developer adept in all stages of
+          advanced web development.Knowledgeable in user interface,
+          testing, and debugging processes. Bringing forth expertise in
+          design,installation, testing and maintenance of web systems.
+              </span>
+            </div>
+         
         </div>
-        <Link to="contact" smooth={true} spy={true}>
+        <div className="resume">
+        <Link to="contact" smooth={true} spy={true} className="button_">
           <button className="button i-button">Hire me</button>
+         
         </Link>
+        <a href={Resume} target="_blank">
+          <button className="button n-button">Resume</button>
+          </a>
+        </div>
+        
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+          <a href="https://github.com/indrakhanal/" target="_blank"><img src={Github} alt="Github" /></a>
+          <a href="https://www.linkedin.com/in/indra-khanal-577444143" target="_blank"><img src={LinkedIn} alt="LinkedIn" /></a>
+          <a href="https://www.instagram.com/indra_khanal01/" target="_blank"><img src={Instagram} alt="Instagram" /></a>
         </div>
       </div>
       {/* right image side */}
       <div className="i-right">
-        <img src={Vector1} alt="" />
-        <img src={Vector2} alt="" />
-        <img src={boy} alt="" />
+        <img src={""} alt="" />
+        <img src={""} alt="" />
+        <img className="myimage" src={boy} alt="My-Profile" />
         {/* animation */}
         <motion.img
           initial={{ left: "-36%" }}
           whileInView={{ left: "-24%" }}
           transition={transition}
-          src={glassesimoji}
+          // src={glassesimoji}
           alt=""
         />
 
@@ -64,18 +76,18 @@ const Intro = () => {
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={crown} text1="Web" text2="Developer" />
+          <FloatinDiv img={crown} text1="Python" text2="Developer" />
         </motion.div>
 
         {/* animation */}
         <motion.div
-          initial={{ left: "9rem", top: "18rem" }}
-          whileInView={{ left: "0rem" }}
+          initial={{ left: "0rem", top: "18rem" }}
+          whileInView={{ left: "-3rem" }}
           transition={transition}
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+          <FloatinDiv img={thumbup} text1="Best UI With" text2="React" />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
