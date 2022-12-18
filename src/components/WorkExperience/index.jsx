@@ -61,10 +61,10 @@ export default function WorkExperience() {
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Live Projects Link:</li>
-                            <li><a href="https://merobaby.com/" target={"_blank"}>LINK1</a></li>
-                            <li><a href="https://ntsagro.com/" target={"_blank"}>LINK2</a></li>
-                            <li><a href="https://everyinches.com/" target={"_blank"}>LINK3</a></li>
-                            <li><a href="https://rupitastore.ordersathi.com/" target={"_blank"}>LINK4</a></li>
+                            <li><a href="https://merobaby.com/" target={"_blank"}>LINK1 &nbsp;&nbsp;</a></li>
+                            <li><a href="https://ntsagro.com/" target={"_blank"}>LINK2 &nbsp;&nbsp;</a></li>
+                            <li><a href="https://everyinches.com/" target={"_blank"}>LINK3&nbsp;&nbsp;</a></li>
+                            <li><a href="https://rupitastore.ordersathi.com/" target={"_blank"}>LINK4&nbsp;&nbsp;</a></li>
                         </ul>
                         <li>Smart water drinking assets management system.</li>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
@@ -83,8 +83,8 @@ export default function WorkExperience() {
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Live Projects Link:</li>
-                            <li><a href="https://assetmanagementsystem.netlify.app/#/login" target={"_blank"}>LINK1</a></li>
-                            <li><a href=" https://assetmanagementsystem.netlify.app/#/scheme/scheme-name/home" target={"_blank"}>LINK2</a></li>
+                            <li><a href="https://assetmanagementsystem.netlify.app/#/login" target={"_blank"}>LINK1&nbsp;&nbsp;</a></li>
+                            <li><a href=" https://assetmanagementsystem.netlify.app/#/scheme/scheme-name/home" target={"_blank"}>LINK2&nbsp;&nbsp;</a></li>
                         </ul>
                         <li>Logistics Management System.</li>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
