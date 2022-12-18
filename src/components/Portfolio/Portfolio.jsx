@@ -7,6 +7,8 @@ import Ecommerce from "../../img/ecommerce.png";
 import HOC from "../../img/hoc.png";
 import MusicApp from "../../img/musicapp.png";
 import { themeContext } from "../../Context";
+// import ReactTooltip from 'react-tooltip';
+
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -23,8 +25,14 @@ const Portfolio = () => {
         grabCursor={true}
         className="portfolio-slider"
       >
+       
         <SwiperSlide>
-          <img src={Sidebar} alt="" />
+        {/* <div className="tooltip">
+        <Tooltip title="This is a tooltip">
+          <button>Hover over me</button>
+          </Tooltip>
+          </div> */}
+        <img src={Sidebar} alt="" />
         </SwiperSlide>
         <SwiperSlide>
           <img src={Ecommerce} alt="" />

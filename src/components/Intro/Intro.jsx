@@ -31,10 +31,9 @@ const Intro = () => {
           <span>INDRA KHANAL</span>
             <div className="zoom">
               <span>
-            Experienced Full Stack Python Developer adept in all stages of
-          advanced web development.Knowledgeable in user interface,
-          testing, and debugging processes. Bringing forth expertise in
-          design,installation, testing and maintenance of web systems.
+          Dynamic and detail-oriented Full Stack Developer with 3+ years of experience in developing and maintaining software applications.
+           Proficient in Python, Django, React, and PostgreSQL. Skilled in agile development methodologies and a strong believer in test-driven development. 
+           Seeking a challenging and rewarding opportunity to utilize my skills and experience to contribute to the success of a growing organization.
               </span>
             </div>
          

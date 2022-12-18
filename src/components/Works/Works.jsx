@@ -54,7 +54,7 @@ const Works = () => {
           className="w-mainCircle"
         >
           <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+            <img src={Upwork} alt="Python" />
           </div>
           <div className="w-secCircle">
             <img src={Fiverr} alt="" />

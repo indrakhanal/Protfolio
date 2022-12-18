@@ -101,6 +101,8 @@ padding: 3px;
 
 .i-right > img.myimage:hover{
   transform: scale(1.5); 
+  filter: brightness(120%);
+
   /* transition: all .2s ease-out; */
 
 
@@ -125,7 +127,7 @@ padding: 3px;
   padding: 30px;
   transition: transform .8s; /* Animation */
   /* width: 200px; */
-  height: 100px;
+  height: 133px;
   margin: 0 auto;
 }
 .zoom > span {
@@ -143,8 +145,6 @@ padding: 3px;
   box-shadow: 3px;
   box-shadow: -1px -1px 15px#4e5050;
   padding: 30px;
-
-
 }
 .button_{
   padding: 40px;

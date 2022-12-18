@@ -60,6 +60,9 @@
   padding-bottom: 0px;
   /* padding-top: 50px; */
 }
+.n-name>img:hover{
+  filter: brightness(150%);
+}
 .n-name>span{
   display: flex;
   background-color: brown;
