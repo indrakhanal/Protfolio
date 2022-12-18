@@ -12,7 +12,7 @@ const navbar = () => {
       <div className="n-left">
         <div className="n-name">
           <img src={myimage} />
-          <span>IndraKhanal</span>
+          {/* <span>IndraKhanal</span> */}
         </div>
         <Toggle />
       </div>
