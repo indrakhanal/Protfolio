@@ -124,15 +124,15 @@ padding: 3px;
 
 .zoom {
   text-decoration: none;
-  padding: 30px;
+  /* padding: 30px; */
   transition: transform .8s; /* Animation */
   /* width: 200px; */
-  height: 133px;
+  height: 190px;
   margin: 0 auto;
 }
 .zoom > span {
   font-weight: 100;
-  font-size: 20px;
+  font-size: 19px;
   color: var(--gray);
   margin-top: 10px;
 
