@@ -27,9 +27,18 @@ const Services = () => {
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>services</span>
         <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
-          <br />
-          ispum is simpley dummy text of printing
+          <div className="text">
+            <li>
+              Web application development: Using React and Python to build custom web applications according to client requirements.
+              This involve creating user interfaces with React, building APIs and backend systems with Python,
+              and integrating with databases and other services.
+            </li>
+            <br />
+            <li>
+              Data analysis and visualization:Using Python and libraries such as Pandas, NumPy and Matplotlib to perform data analysis and visualization.
+              This may include cleaning and manipulating data, creating reports, and helping clients make data-driven decisions.
+            </li>
+          </div>
         </spane>
         <a href={Resume} download>
           <button className="button s-button">View Resume</button>
@@ -47,7 +56,7 @@ const Services = () => {
           <Card
             emoji={HeartEmoji}
             heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            detail={"HTML, CSS, Bootstrap"}
           />
         </motion.div>
         {/* second card */}
@@ -58,8 +67,8 @@ const Services = () => {
         >
           <Card
             emoji={Glasses}
-            heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            heading={"Development"}
+            detail={"Django, Python, JavaScript, React, Ajax, JQuerry"}
           />
         </motion.div>
         {/* 3rd */}
@@ -70,9 +79,9 @@ const Services = () => {
         >
           <Card
             emoji={Humble}
-            heading={"UI/UX"}
+            heading={"Production"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
+              "GIT, Nginx, Heroku, Netlify"
             }
             color="rgba(252, 166, 31, 0.45)"
           />

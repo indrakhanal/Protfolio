@@ -3,7 +3,7 @@ import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 import Resume from './resume.pdf';
-import myimage from '../../img/me2.jpg'
+import myimage from '../../img/mylogo.png'
 
 const navbar = () => {
   return (

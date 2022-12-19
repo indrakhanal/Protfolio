@@ -39,6 +39,7 @@
 /* right sided */
 .cards {
   position: relative;
+  margin-left: 249px;
 }
 .cards > * {
   position: absolute;
@@ -67,7 +68,11 @@
   top: 13rem;
   left: -18rem;
 }
-
+.text{
+  width: 200px;
+  height: auto;
+  width: 325px;
+}
 @media screen and (max-width: 767px) {
   .services {
     margin-top: 323px;

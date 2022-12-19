@@ -11,7 +11,7 @@
     --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 *{
-  font-family:cursive;
+  font-family:Sans-serif;
   color: #5d6d7e;
 }
 .App{
@@ -19,6 +19,9 @@
     overflow: hidden;
     color: var(--black);    
 }
+/* .main-body{
+  overflow: scroll;
+} */
 
 .button {
     background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);

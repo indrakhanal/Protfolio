@@ -25,17 +25,19 @@ function App() {
       }}
     >
       <Navbar />
+      <div className="main-body">
       <Intro />
       <About />
       <Experience />
       <LabTabs />
+      <Works />
       <WorkExperience />
       <Services />
-      <Works />
       <Portfolio />
       {/* <Testimonial /> */}
       <Contact />
       <Footer />
+      </div>
     </div>
   );
 }

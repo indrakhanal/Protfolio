@@ -17,7 +17,7 @@
   font-size: 1.3rem;
   font-weight: bold;
   border-radius: 100%;
-  border: 5px solid grey;
+  border: 3px solid white;
   width: 110px;
   height: 100px;
   margin-top: 30px;
@@ -52,7 +52,7 @@
   width: 110px;
   height: 100px;
   border-color: white;
-  border-width: 2px;
+  border-width: 1px;
   padding: 0px;
   border-radius: 100%;
   padding-bottom: 10px;
@@ -61,7 +61,7 @@
   /* padding-top: 50px; */
 }
 .n-name>img:hover{
-  filter: brightness(150%);
+  filter: brightness(120%);
 }
 .n-name>span{
   background-color: #cac5c5;
