@@ -67,7 +67,15 @@ export default function WorkExperience() {
                             <li><a href="https://rupitastore.ordersathi.com/" target={"_blank"}>LINK4&nbsp;&nbsp;</a></li>
                         </ul>
                         <li>Smart water drinking assets management system.</li>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <p>The asset management tools comprising a mobile app, a web dashboard, and a configuration
+                            panel are developed to support the management of assets and making asset management plans
+                            for water systems.<br />
+                            The mobile app is a password-protected application that allows operational staff members of the
+                            water system to view and add information into the water system. The web dashboard is a publicly
+                            accessible web link that presents information about the water system. The configuration panel in
+                            the password-protected data management area for the entire system. Data and settings for the
+                            water system can be managed from the configuration area.
+                        </p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
                             <li>Django</li>
@@ -87,7 +95,7 @@ export default function WorkExperience() {
                             <li><a href=" https://assetmanagementsystem.netlify.app/#/scheme/scheme-name/home" target={"_blank"}>LINK2&nbsp;&nbsp;</a></li>
                         </ul>
                         <li>Logistics Management System.</li>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <p>In Logistics management section </p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
                             <li>Django</li>
@@ -101,7 +109,8 @@ export default function WorkExperience() {
                             <li>GIT</li>
                         </ul>
                         <li>API integration with Odoo.</li>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <p>Integrated api endpoint provided by odoo services to the e-commerce website.
+                            Thuis System autometically push every order to odoo system when admin confirm the order from the admin panel</p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
                             <li>Djano</li>
@@ -147,7 +156,9 @@ export default function WorkExperience() {
                             <li><a href="https://github.com/indrakhanal/speech-to-text" target={"_blank"}>View Repository</a></li>
                         </ul>
                         <li>multi-tenant Django chat App using Web Socket.</li>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <p>Live chat support is a way for customers to get help through instant messaging platforms. 
+                            It happens on a one on one level, often via a company's website. It can be a proactive
+                             chat pop-up like a chat box appearing on your screen and asking if you need help.</p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
                             <li>Django</li>
@@ -163,7 +174,7 @@ export default function WorkExperience() {
                             <li><a href="https://github.com/indrakhanal/Multitenant-ChatApp-Django" target={"_blank"}>View Repository</a></li>
                         </ul>
                         <li>AI powered Chat-bot using RASA framework.</li>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <p>A complex chatbot system that can be customized and integrated in any website to provide contextual support in an automated and effecient way.</p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
                             <li>Python</li>
@@ -178,7 +189,7 @@ export default function WorkExperience() {
                             <li><a href="https://github.com/indrakhanal/ChatBot-Rasa" target={"_blank"}>View Repository</a></li>
                         </ul>
                         <li>ETL with Apache Airflow.</li>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <p></p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
                             <li>Apache Airflow</li>

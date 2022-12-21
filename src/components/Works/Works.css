@@ -96,8 +96,9 @@
   transition: 0.3s ease-in-out;
   border-radius: 100%;
   /* box-shadow: -1px -7px 8px black; */
-  box-shadow: 0 0 14px 3px black;
+  box-shadow: 0 0 14px 3px #1f2323;
   width: 120px;
+  /* box-shadow: inset -1px -1px 15px #1f2323; */
 }
 
 .w-secCircle >img:hover{
@@ -123,6 +124,15 @@
   background: #f5c32c;
   left: 18rem;
   top: 8rem;
+}
+
+.awesome>p{
+  width: 400px;
+  height: auto;
+  padding-left: 40px;
+}
+.slider-img{
+  
 }
 
 @media screen and (max-width: 480px) {
