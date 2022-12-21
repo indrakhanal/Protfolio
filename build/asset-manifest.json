@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.aba1c7b0.css",
-    "main.js": "/static/js/main.79f7f51e.js",
-    "static/media/prot1.PNG": "/static/media/prot1.ad602019358803be372d.PNG",
+    "main.css": "/static/css/main.61f39efa.css",
+    "main.js": "/static/js/main.de62ed25.js",
+    "static/media/store.PNG": "/static/media/store.9aa2b0cc142b8c4f0394.PNG",
+    "static/media/prot1.PNG": "/static/media/prot1.0fff4d6c6fd752c19593.PNG",
+    "static/media/proto.PNG": "/static/media/proto.b77904217fcd97f61c94.PNG",
     "static/media/me.png": "/static/media/me.bd828d10174f6f7cd63f.png",
     "static/media/react_.png": "/static/media/react_.81ed438b18e24116794d.png",
     "static/media/resume.pdf": "/static/media/resume.e827e10fa6bdf68d8466.pdf",
-    "static/media/musicapp.png": "/static/media/musicapp.f1c301f91904ef5f9249.png",
     "static/media/asset.PNG": "/static/media/asset.b19ec0815e62f35a8ae0.PNG",
     "static/media/tk.png": "/static/media/tk.b0430fb918d882668a5c.png",
     "static/media/mylogo.png": "/static/media/mylogo.e948a85ca3164cb04210.png",
@@ -16,7 +17,6 @@
     "static/media/jupyter.jpeg": "/static/media/jupyter.5d06346892825e08ea95.jpeg",
     "static/media/celery.png": "/static/media/celery.8c2813009cb0dbe1eaee.png",
     "static/media/next.png": "/static/media/next.329c93742adef4ca79f6.png",
-    "static/media/hoc.png": "/static/media/hoc.e6af51fc04c57ae67096.png",
     "static/media/git.png": "/static/media/git.95e92c065c8ce5f9147a.png",
     "static/media/rest.jpeg": "/static/media/rest.925c8cba603d7000aee3.jpeg",
     "static/media/vscode.png": "/static/media/vscode.db93542ad04e4aac958e.png",
@@ -32,11 +32,11 @@
     "static/media/bootstrap.svg": "/static/media/bootstrap.d180fe4cd44732fd70b35f650a76b99c.svg",
     "static/media/ts.svg": "/static/media/ts.22b4f22ec3ee32c08fb2c0a25682bb5b.svg",
     "index.html": "/index.html",
-    "main.aba1c7b0.css.map": "/static/css/main.aba1c7b0.css.map",
-    "main.79f7f51e.js.map": "/static/js/main.79f7f51e.js.map"
+    "main.61f39efa.css.map": "/static/css/main.61f39efa.css.map",
+    "main.de62ed25.js.map": "/static/js/main.de62ed25.js.map"
   },
   "entrypoints": [
-    "static/css/main.aba1c7b0.css",
-    "static/js/main.79f7f51e.js"
+    "static/css/main.61f39efa.css",
+    "static/js/main.de62ed25.js"
   ]
 }

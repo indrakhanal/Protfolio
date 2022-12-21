@@ -100,17 +100,13 @@
       margin-top: 0;
       flex-direction: column;
       gap: 5rem;
-      height: 66rem;
+      height: 86rem;
       padding: 0;
     }
   
     .cards {
-      display: flex;
-      flex-direction: column;
-      gap: 17rem;
+      display: none;
     }
-    .cards > * {
-      position: static;
-    }
+  
   }
   

@@ -4,8 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
 import Sidebar from "../../img/prot1.PNG";
 import Ecommerce from "../../img/asset.PNG";
-import HOC from "../../img/hoc.png";
-import MusicApp from "../../img/musicapp.png";
+import HOC from "../../img/store.PNG";
+import MusicApp from "../../img/proto.PNG";
 import { themeContext } from "../../Context";
 import next from "../../img/next.png"
 import previous from "../../img/previous.jpeg"
@@ -20,7 +20,7 @@ const Portfolio = () => {
   const images = [Sidebar, Ecommerce, HOC, MusicApp];
 
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  const texts = ["Ecommerce Website ", "Asseet Management System Dashboard", "HOC", "MusicApp"];
+  const texts = ["Ecommerce Website ", "Asseet Management System Dashboard", "E-Commerce website", "My Protfolio Website"];
 
   const handleNext = () => {
     setCurrentImageIndex((currentImageIndex + 1) % images.length);
@@ -38,9 +38,9 @@ const Portfolio = () => {
       <span style={{color: darkMode?'white': ''}}>Recent Projects</span>
       <span>Portfolio</span>
       <div className="slider-img">
-      <a onClick={handlePrevious}><i className="previous" aria-hidden="true"></i></a>
+      <a className="left" onClick={handleNext}><img className="previous" src={previous} /></a>
       <img className="swip" src={images[currentImageIndex]} alt="Current image" />
-      <a className="left" onClick={handleNext}><img className="next" src={next} /></a>
+      <a className="right" onClick={handleNext}><img className="next" src={next} /></a>
       <p>{texts[currentTextIndex]}</p>
       </div>
     </div>

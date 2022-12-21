@@ -77,8 +77,8 @@
   .services {
     margin-top: 323px;
     flex-direction: column;
-    gap: 5rem;
-    height: 65rem;
+    gap: 2rem;
+    height: 24rem;
     padding: 0;
   }
   .s-button{
