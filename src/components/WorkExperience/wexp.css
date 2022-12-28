@@ -69,13 +69,11 @@
      */
      margin-top: 25px;
   }
-  
   .techChild>li{
     display: inline;
-    padding: 5px;
+    padding: 6px !important;
     font-size: 11px;
     color: orange;
-    padding-top: -15px;
   }
   .techChild>li>a{
     color: blue;
@@ -89,23 +87,35 @@
     font-weight: normal;
     font-size: 14px;
     color: aliceblue;
-
   }
  
   
  
   
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 760px) {
     .wexp {
       margin-top: 0;
       flex-direction: column;
       gap: 5rem;
-      height: 86rem;
+      height: 94rem;
       padding: 0;
+    }
+    .container{
+      width: 305px;
+      margin-left: -20px;
+    }
+    .tech{
+      margin-left: -20px;
+      width: 270;
     }
   
     .cards {
       display: none;
+    }
+    .techChild{
+      margin-left: -20px;
+      /* width: 250; */
+
     }
   
   }

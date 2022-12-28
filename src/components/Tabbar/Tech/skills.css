@@ -97,4 +97,18 @@
     .tools{
       margin-left: 0px;
     }
+    .box{
+      background-color: white;
+
+    }
+
+    .box > img {
+      width: 90px;
+      height: 70px;
+      border-radius: 25%;
+      margin-left: 10px;
+      margin-top: 12px;
+      padding: 10px;
+    
+    }
   }

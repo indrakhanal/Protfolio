@@ -1,88 +1,99 @@
-.Tabs-pane{
-    color: aliceblue;
+.Tabs-pane {
+  color: aliceblue;
 }
+
 .tabs {
   padding: 0 3rem 0 3rem;
   padding-top: 0px;
-display: flex;
-height: 11rem;
-margin-bottom: 8rem;
-margin-top: 0rem;
-margin-bottom: -6rem;
-padding-top: 0rem;
+  display: flex;
+  height: 11rem;
+  margin-bottom: 8rem;
+  margin-top: 0rem;
+  margin-bottom: -6rem;
+  padding-top: 0rem;
+}
+
+/* left side */
+.awesome-tab {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* gap: 20px; */
+}
+
+.text-line> :nth-child(1) {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+
+}
+
+.text-line> :nth-child(2) {
+  color: var(--orange);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.text-line> :nth-child(3) {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.s-button {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+/* right sided */
+.text-line {
+  display: flex;
+  gap: 1rem
+}
+
+.content {
+  margin-left: 50px;
+  padding-top: 30px;
+}
+
+.MuiTabs-flexContainer {
+  gap: 4rem;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+  .tabs {
+    flex-direction: column;
+    gap: 5rem;
+    height: 26rem;
+    padding: 0px;
   }
-  /* left side */
-  .awesome-tab {
+
+  .cards {
     display: flex;
     flex-direction: column;
-    position: relative;
-    /* gap: 20px; */
+    gap: 17rem;
   }
-  
-  .text-line > :nth-child(1) {
-    color: var(--black);
-    font-size: 2.5rem;
-    font-weight: bold;
-   
+
+  .cards>* {
+    position: static;
   }
-  .text-line > :nth-child(2) {
-    color: var(--orange);
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  .text-line > :nth-child(3) {
-    color: var(--gray);
-    font-size: 14px;
-    margin-top: 1rem;
-  }
-  .s-button {
-    width: 8rem;
-    height: 2rem;
-    margin-top: 1rem;
-  }
-  /* right sided */
-  .text-line{
+
+  .text-line>span {
     display: flex;
-    gap:1rem
+    gap: 1rem;
+    font-size: 23px !important;
   }
+
   .content {
-    margin-left: 50px;
-    padding-top: 30px;
+    margin-left: 0px !important;
+    padding-top: 0px;
   }
-  .MuiTabs-flexContainer{
-    gap:4rem;
+
+  .MuiTabPanel-root {
+    overflow: scroll !important;
   }
- 
-  
- 
-  
-  @media screen and (max-width: 767px) {
-    .tabs {
-      flex-direction: column;
-gap: 5rem;
-height: 26rem;
-padding: 0px;
-    }
-  
-    .cards {
-      display: flex;
-      flex-direction: column;
-      gap: 17rem;
-    }
-    .cards > * {
-      position: static;
-    }
-    .text-line >span {
-      display: flex;
-      gap: 1rem;
-      font-size: 23px !important;
-    }
-    .content{
-      margin-left: 0px !important;
-      padding-top: 0px;
-    }
-    .MuiTabPanel-root{
-      overflow: scroll !important;
-    }
-  }
-  
+}

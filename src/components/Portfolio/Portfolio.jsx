@@ -20,7 +20,10 @@ const Portfolio = () => {
   const images = [Sidebar, Ecommerce, HOC, MusicApp];
 
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  const texts = ["Ecommerce Website ", "Asseet Management System Dashboard", "E-Commerce website", "My Protfolio Website"];
+  const texts = ["This is the e-commerce website of baby products, in which admin can manage their all products, categories, brands etc. It has fully customized admin panel with advanced sales and order report",
+   "This is the Asseet Management System Dashboard which was created with react and django. It show the respective data entered on configuration panel.Configuration panel need to logged in but dashboard is accessiable to public.", 
+   "This is the e-commerce website of store, in which admin can manage their all products, categories, brands etc. It has fully customized admin panel with advanced sales and order report, It is one of the tenant created by multi-tenant system",
+    "This is My Protfolio Website which was created with react"];
 
   const handleNext = () => {
     setCurrentImageIndex((currentImageIndex + 1) % images.length);
@@ -38,9 +41,9 @@ const Portfolio = () => {
       <span style={{color: darkMode?'white': ''}}>Recent Projects</span>
       <span>Portfolio</span>
       <div className="slider-img">
-      <a className="left" onClick={handleNext}><img className="previous" src={previous} /></a>
+      <a className="left" onClick={handleNext}>prev</a>
       <img className="swip" src={images[currentImageIndex]} alt="Current image" />
-      <a className="right" onClick={handleNext}><img className="next" src={next} /></a>
+      <a className="right" onClick={handleNext}>Next</a>
       <p>{texts[currentTextIndex]}</p>
       </div>
     </div>

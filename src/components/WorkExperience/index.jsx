@@ -123,15 +123,15 @@ export default function WorkExperience() {
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
-                            <li>Django</li>
-                            <li>Django Rest Framework</li>
-                            <li>Bootstrap</li>
-                            <li>Ajax</li>
-                            <li>JQuerry</li>
-                            <li>JavaScript</li>
-                            <li>HTML/CSS</li>
-                            <li>Nginx</li>
-                            <li>GIT</li>
+                            <li> Django </li>
+                            <li> Django Rest Framework </li>
+                            <li> Bootstrap </li>
+                            <li> Ajax </li>
+                            <li> JQuerry </li>
+                            <li> JavaScript </li>
+                            <li> HTML/CSS </li>
+                            <li> Nginx </li>
+                            <li> GIT </li>
                         </ul>
                     </ul>
                     </div>
@@ -145,11 +145,11 @@ export default function WorkExperience() {
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
-                            <li>Flask</li>
-                            <li>SqLiteDb</li>
-                            <li>Heroku</li>
-                            <li>Docker</li>
-                            <li>Google API</li>
+                            <li> Flask </li>
+                            <li> SqLiteDb </li>
+                            <li> Heroku </li>
+                            <li> Docker </li>
+                            <li> Google API </li>
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Projects Link Github:</li>
@@ -161,13 +161,13 @@ export default function WorkExperience() {
                              chat pop-up like a chat box appearing on your screen and asking if you need help.</p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
-                            <li>Django</li>
-                            <li>PostgreSQL</li>
-                            <li>Django Tenants</li>
-                            <li>Web Sockets</li>
-                            <li>GIT</li>
-                            <li>Heroku</li>
-                            <li>Docker</li>
+                            <li> Django </li>
+                            <li> PostgreSQL </li>
+                            <li> Django Tenants </li>
+                            <li> Web Sockets </li>
+                            <li> GIT </li>
+                            <li> Heroku </li>
+                            <li> Docker </li>
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Projects Link Github:</li>
@@ -177,12 +177,12 @@ export default function WorkExperience() {
                         <p>A complex chatbot system that can be customized and integrated in any website to provide contextual support in an automated and effecient way.</p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
-                            <li>Python</li>
-                            <li>PostgreSQL</li>
-                            <li>RASA</li>
-                            <li>NLP/NLU</li>
-                            <li>Heroku</li>
-                            <li>Docker</li>
+                            <li> Python </li>
+                            <li> PostgreSQL </li>
+                            <li> RASA </li>
+                            <li> NLP/NLU </li>
+                            <li> Heroku </li>
+                            <li> Docker </li>
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Projects Link Github:</li>
@@ -192,13 +192,13 @@ export default function WorkExperience() {
                         <p></p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
-                            <li>Apache Airflow</li>
-                            <li>Google Big Queries</li>
-                            <li>NumPy</li>
-                            <li>Pandas</li>
-                            <li>Matplotlib</li>
-                            <li>PostgreSQL</li>
-                            <li>Docker</li>
+                            <li> Apache Airflow </li>
+                            <li> Google Big Queries </li>
+                            <li> NumPy </li>
+                            <li> Pandas </li>
+                            <li> Matplotlib </li>
+                            <li> PostgreSQL </li>
+                            <li> Docker </li>
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Projects Link Github:</li>
@@ -208,10 +208,10 @@ export default function WorkExperience() {
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
-                            <li>Scrapy</li>
-                            <li>Selenium</li>
-                            <li>Beautiful Soup</li>
-                            <li>MongoDb</li>
+                            <li> Scrapy </li>
+                            <li> Selenium </li>
+                            <li> Beautiful Soup </li>
+                            <li> MongoDb </li>
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Projects Link Github:</li>
@@ -239,13 +239,13 @@ export default function WorkExperience() {
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
-                            <li>Tkinter</li>
-                            <li>SqLiteDb</li>
-                            <li>Support Vector Machine Algorithm</li>
-                            <li>Numpy</li>
-                            <li>pandas</li>
-                            <li>Matplotlib</li>
-                            <li>scikit-learn</li>
+                            <li> Tkinter </li>
+                            <li> SqLiteDb </li>
+                            <li> Support Vector Machine Algorithm </li>
+                            <li> Numpy </li>
+                            <li> pandas </li>
+                            <li> Matplotlib </li>
+                            <li> scikit-learn </li>
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Projects Link Github:</li>
@@ -255,15 +255,15 @@ export default function WorkExperience() {
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
-                            <li>Flask</li>
-                            <li>SqLiteDb</li>
-                            <li>Heroku</li>
-                            <li>Docker</li>
-                            <li>Linear Regression Algorithm</li>
-                            <li>Numpy</li>
-                            <li>pandas</li>
-                            <li>Matplotlib</li>
-                            <li>scikit-learn</li>
+                            <li> Flask </li>
+                            <li> SqLiteDb </li>
+                            <li> Heroku </li>
+                            <li> Docker </li>
+                            <li> Linear Regression Algorithm </li>
+                            <li> Numpy </li>
+                            <li> pandas </li>
+                            <li> Matplotlib </li>
+                            <li> scikit-learn </li>
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Projects Link Github:</li>
@@ -273,15 +273,15 @@ export default function WorkExperience() {
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
-                            <li>Flask</li>
-                            <li>SqLiteDb</li>
-                            <li>Heroku</li>
-                            <li>Docker</li>
-                            <li>Linear Regression Algorithm</li>
-                            <li>Numpy</li>
-                            <li>pandas</li>
-                            <li>Matplotlib</li>
-                            <li>scikit-learn</li>
+                            <li> Flask </li>
+                            <li> SqLiteDb </li>
+                            <li> Heroku </li>
+                            <li> Docker </li>
+                            <li> Linear Regression Algorithm </li>
+                            <li> Numpy </li>
+                            <li> pandas </li>
+                            <li> Matplotlib </li>
+                            <li> scikit-learn </li>
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Projects Link Github:</li>
@@ -291,15 +291,15 @@ export default function WorkExperience() {
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
-                            <li>Django</li>
-                            <li>Djnago Rest Framework</li>
-                            <li>Oauth</li>
-                            <li>React</li>
-                            <li>Redux</li>
-                            <li>Typescript</li>
-                            <li>Docker</li>
-                            <li>GIT</li>
-                            <li>Heroku</li>
+                            <li> Django </li>
+                            <li> Djnago Rest Framework </li>
+                            <li> Oauth </li>
+                            <li> React </li>
+                            <li> Redux </li>
+                            <li> Typescript </li>
+                            <li> Docker </li>
+                            <li> GIT </li>
+                            <li> Heroku </li>
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Projects Link Github:</li>

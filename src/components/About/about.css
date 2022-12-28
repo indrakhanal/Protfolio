@@ -116,7 +116,7 @@
   
   @media screen and (max-width: 480px) {
     .about {
-      margin-top: 120px;
+      margin-top: 160px;
       flex-direction: column;
       gap: 5rem;
       height: 66rem;

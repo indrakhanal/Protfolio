@@ -45,7 +45,7 @@
 }
 
 .w-mainCircle {
-  transform: scale(0.6);
+  /* transform: scale(0.6); */
   transition: 0.4s ease-in-out;
   left: 9rem;
   position: relative;
@@ -88,6 +88,7 @@
   top: 13rem;
 }
 
+
 .w-secCircle {
   width: 6rem;
   height: 6rem;
@@ -115,6 +116,7 @@
 .w-secCircle>img:hover {
   width: 130px;
   box-shadow: 15px 0 9px 0px black;
+  /* transform: rotate(0.142rad); */
 }
 
 
@@ -145,17 +147,22 @@
   padding-left: 40px;
 }
 
-.slider-img {}
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 766px) {
   .works {
     flex-direction: column;
     height: 44rem;
     padding: 0px;
-    padding-left: 0px;
+    padding: 0px;
     gap: 0rem;
     overflow: scroll;
-    padding-left: 81px;
+  }
+  .w-left{
+  width: 250px;
+  }
+  .awesome>p{
+    width: 270px;
+    margin-left: -49px;
   }
 
   .w-right {
