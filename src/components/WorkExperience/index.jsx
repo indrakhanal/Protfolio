@@ -95,7 +95,7 @@ export default function WorkExperience() {
                             <li><a href=" https://assetmanagementsystem.netlify.app/#/scheme/scheme-name/home" target={"_blank"}>LINK2&nbsp;&nbsp;</a></li>
                         </ul>
                         <li>Logistics Management System.</li>
-                        <p>In Logistics management section </p>
+                        <p>In Logistics management system all the order information can be tracked until the order will not deliver to the customer including rider detail and everything about that order.</p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
                             <li>Django</li>
@@ -120,7 +120,7 @@ export default function WorkExperience() {
                             <li>GIT</li>
                         </ul>
                         <li> Sales and Order manager for e-commerce</li>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <p>Created sales order manager for e-commerce admin panel</p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
                             <li> Django </li>
@@ -252,7 +252,9 @@ export default function WorkExperience() {
                             <li><a href="https://github.com/indrakhanal/web-scraping-Scrapy" target={"_blank"}>View Repository</a></li>
                         </ul>
                         <li>IPL cricket Score Prediction System using Machine learning.</li>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <p>In this project, I have implemented IPL live match score prediction System using Linear Regression Algorithm.
+                            In which the datasets were downloaded from Kaggle datasets, datasets were 2012 to 2019 match score records. 
+                            I have Used python jupyter notebook for model building and implemented on the flask app for UI.</p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
                             <li> Flask </li>
@@ -270,7 +272,10 @@ export default function WorkExperience() {
                             <li><a href="https://github.com/indrakhanal/web-scraping-Scrapy" target={"_blank"}>View Repository</a></li>
                         </ul>
                         <li>Nepal stock market price prediction system.</li>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <p>In this project, I have created a machine learning model that predicts the closing price of each script according to the current market price; such as today's opening price, previous closing price, today's high value, and low value.
+                            <br/>
+                            For UI i have created a flask app to predict the price. In this project, the datasets used as 2012 to 2017 as training datasets and 2018 to 2020 as test datasets. The algorithm used is a supervised machine learning model which is a linear regression algorithm. 
+                        </p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
                             <li> Flask </li>
@@ -288,7 +293,7 @@ export default function WorkExperience() {
                             <li><a href="https://github.com/indrakhanal/web-scraping-Scrapy" target={"_blank"}>View Repository</a></li>
                         </ul>
                         <li>TODO and PetApp .</li>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <p>Created a restful api for handeling todo and pet app with react as UI</p>
                         <ul className="techChild">
                             <li>Tech Uses: </li>
                             <li> Django </li>
