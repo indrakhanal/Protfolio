@@ -26,7 +26,7 @@ const Services = () => {
         {/* dark mode */}
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>services</span>
-        <spane>
+        <span>
           <div className="text">
             <li>
               Web application development: Using React and Python to build custom web applications according to client requirements.
@@ -39,7 +39,7 @@ const Services = () => {
               This may include cleaning and manipulating data, creating reports, and helping clients make data-driven decisions.
             </li>
           </div>
-        </spane>
+        </span>
         <a href={Resume} download>
           <button className="button s-button">View Resume</button>
         </a>

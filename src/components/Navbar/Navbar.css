@@ -37,6 +37,16 @@
   display: flex;
   gap: 2rem;
   margin-right: 4rem;
+  list-style: none;
+}
+.n-list > ul>li>a {
+ color: #fff;
+ font-weight: 501;
+ font-size: 14px;
+ text-transform: uppercase;
+}
+.hamburger-react>:nth-child(1),.hamburger-react>:nth-child(2), .hamburger-react>:nth-child(3){
+color: #fff;
 }
 
 .n-list > ul :hover {
@@ -85,5 +95,8 @@
     justify-content: space-between;
     margin-bottom: 2rem;
     top: 0;
+  }
+  .hamburger-react{
+    display: none;
   }
 }

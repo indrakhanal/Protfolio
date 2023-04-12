@@ -18,7 +18,7 @@ const About = () => {
       <div className="about-awesome">
       <span style={{ color: darkMode ? "white" : "" }}>Personal Info</span>
        <span></span>
-       <spane>
+       <span>
        <div className="info">
         <span>
         <span>My Name is Indra i am from syangja, currently i'm Working as a full stack python developer at SmartTech Solutions PVT. LTD.</span>
@@ -32,7 +32,7 @@ const About = () => {
         <li>Degree:  BScCSIT</li>
         </span>
             </div>
-        </spane>
+        </span>
         <div
           className="blur s-blur2"
           style={{ background: "var(--purple)" }}

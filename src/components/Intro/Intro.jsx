@@ -12,6 +12,7 @@ import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import Resume from '../Navbar/resume.pdf';
+import { TypeAnimation } from 'react-type-animation';
 
 const Intro = () => {
   // Transition
@@ -28,7 +29,23 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>HI! I Am</span>
-          <span>INDRA KHANAL</span>
+          <TypeAnimation
+          sequence={[
+            'INDRA', // Types 'One'
+            2000, // Waits 1s
+            'KHANAL', // Deletes 'One' and types 'Two'
+            3000, // Waits 2s
+            'INDRA KHANAL', // Types 'Three' without deleting 'Two'
+            () => {
+              console.log("abc") // Place optional callbacks anywhere in the array
+            }
+          ]}
+          wrapper="span"
+          cursor={true}
+          repeat={Infinity}
+          style={{ fontSize: '2em', display: 'inline-block' }}
+        />
+          {/* <span>INDRA KHANAL</span> */}
             <div className="zoom">
               <span>
           Dynamic and detail-oriented Full Stack Developer with 3+ years of experience in developing and maintaining software applications.
@@ -61,11 +78,10 @@ const Intro = () => {
         <img src={""} alt="" />
         <img className="myimage" src={boy} alt="My-Profile" />
         {/* animation */}
-        <motion.img
+        {/* <motion.img
           initial={{ left: "-36%" }}
           whileInView={{ left: "-24%" }}
           transition={transition}
-          // src={glassesimoji}
           alt=""
         />
 
@@ -78,16 +94,15 @@ const Intro = () => {
           <FloatinDiv img={crown} text1="Python" text2="Developer" />
         </motion.div>
 
-        {/* animation */}
+
         <motion.div
           initial={{ left: "0rem", top: "18rem" }}
           whileInView={{ left: "-3rem" }}
           transition={transition}
           className="floating-div"
         >
-          {/* floatinDiv mein change hy dark mode ka */}
           <FloatinDiv img={thumbup} text1="Best UI With" text2="React" />
-        </motion.div>
+        </motion.div> */}
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
         <div
