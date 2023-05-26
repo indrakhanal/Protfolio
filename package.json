@@ -22,7 +22,7 @@
     "react-scroll": "^1.8.6",
     "react-tooltip": "^5.2.0",
     "react-type-animation": "^3.0.1",
-    "swiper": "^8.0.7",
+    "swiper": "^8.4.7",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
