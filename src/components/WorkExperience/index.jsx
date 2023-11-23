@@ -30,17 +30,42 @@ export default function WorkExperience() {
             <TabContext  value={value}>
                     <Box  sx={{ borderBottom: 2, borderColor: 'divider' }}>
                     <TabList onChange={handleChange} aria-label="lab API tabs example">
-                        <Tab style={{color: darkMode ? "white" : "" }} label="SmartTech Solution" value="1" />
-                        <Tab style={{color: darkMode ? "white" : "" }} label="VolgAI PVT.LTD." value="2" />
-                        <Tab style={{color: darkMode ? "white" : "" }} label="Broadways InfoSys" value="3" />
+                        <Tab style={{color: darkMode ? "white" : "" }} label="Cotiviti Nepal PVT.LTD" value="1" />
+                        <Tab style={{color: darkMode ? "white" : "" }} label="SmartTech Solution" value="2" />
+                        <Tab style={{color: darkMode ? "white" : "" }} label="VolgAI PVT.LTD." value="3" />
                         <Tab style={{color: darkMode ? "white" : "" }} label="Hobby Projects" value="4" />
+                        {/* <Tab style={{color: darkMode ? "white" : "" }} label="Hobby Projects" value="5"/> */}
 
                     </TabList>
                     </Box>
                     <TabPanel value="1">
                     <div className="container">
                     <h2>Full Stack Python Developer</h2>
-                    <span>2020/01 - Now</span>
+                    <span>2023/04 - Now</span>
+                    <ul className="tech" style={{listStyle:""}}>
+                        
+                        <p>During my tenure at Cotiviti Nepal, I had the privilege of collaborating with a team of highly skilled professionals, where we seamlessly integrated the latest technologies into various projects. 
+                            This experience not only provided me with the opportunity to expand my knowledge but also allowed me to engage in a collaborative environment characterized by a high level of professionalism. 
+                            The exposure to diverse projects enabled me to continually learn and contribute in a dynamic and innovative fashion, fostering a culture of excellence and growth. </p>
+                        <ul className="techChild">
+                            <li>Tech Uses: </li>
+                            <li>Django</li>
+                            <li>Django Rest Framework</li>
+                            <li>Javascript</li>
+                            <li>JQuerry</li>
+                            <li>Backbone JS</li>
+                            <li>Docker</li>
+                            <li>Celery</li>
+                            <li>RabbitMQ</li>
+                            <li>GIT</li>
+                        </ul>
+                    </ul>
+                    </div>
+                      </TabPanel>
+                    <TabPanel value="2">
+                    <div className="container">
+                    <h2>Full Stack Python Developer</h2>
+                    <span>2020/01 - 2023/03</span>
                     <ul className="tech" style={{listStyle:""}}>
                         <li>Multi-Tenant e-commerce Website.</li>
                         <p>Created a multi-tenant featured website. Which allows allows "users in separate tenants" to view the application as though it was their own. 
@@ -136,7 +161,7 @@ export default function WorkExperience() {
                     </ul>
                     </div>
                       </TabPanel>
-                    <TabPanel value="2">
+                    <TabPanel value="3">
                     <div className="container">
                     <h2>JUNIOR PYTHON DEVELOPER</h2>
                     <span>2019/06 - 2020/01</span>
@@ -217,16 +242,6 @@ export default function WorkExperience() {
                             <li>Projects Link Github:</li>
                             <li><a href="https://github.com/indrakhanal/web-scraping-Scrapy" target={"_blank"}>View Repository</a></li>
                         </ul>
-                    </ul>
-                    </div>
-                    </TabPanel>
-                    <TabPanel value="3">
-                    <div className="container">
-                    <h2>Core Python and Django Training</h2>
-                    <span>2018-09 TO 2019-03</span>
-                    <ul className="tech" style={{listStyle:""}}>
-                        <p>In this period, I have learned core concept on python programming and Django framework and
-                            handle some of live project.</p>
                     </ul>
                     </div>
                     </TabPanel>

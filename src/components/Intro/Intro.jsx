@@ -14,6 +14,14 @@ import { Link } from "react-scroll";
 import Resume from '../Navbar/resume.pdf';
 import { TypeAnimation } from 'react-type-animation';
 
+// const DevTest = () =>{
+//   return(
+//     <>
+//     <span>❤❤❤❤</span>
+//     </>
+//   )
+// }
+
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -37,7 +45,8 @@ const Intro = () => {
             3000, // Waits 2s
             'INDRA KHANAL', // Types 'Three' without deleting 'Two'
             () => {
-              console.log("abc") // Place optional callbacks anywhere in the array
+              // console.log("desss")
+              // DevTest() // Place optional callbacks anywhere in the array
             }
           ]}
           wrapper="span"

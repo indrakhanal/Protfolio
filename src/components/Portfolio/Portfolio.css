@@ -97,6 +97,36 @@
   width: 1000px;
 }
 
+.image {
+  filter: blur(5px);
+  transition: filter 0.3s ease-in-out;
+}
+
+.image.active {
+  filter: none;
+}
+
+.image.inactive {
+  filter: blur(10px);
+}
+
+.caption {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-wrapper.active .caption {
+  opacity: 1;
+}
+
+.image-wrapper.inactive .caption {
+  opacity: 0;
+}
+
 @media screen and (max-width:767px) {
   .portfolio {
     height: 35vh;
