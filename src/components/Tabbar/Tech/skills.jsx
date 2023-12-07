@@ -55,28 +55,28 @@ export const Backend = (i) => {
  animate={{ transform: "scale(1)" }}
  exit={{ transform: "scale(0)" }}
 >
-<div class="wrapper">
-  <div class="box a">
+<div className="wrapper">
+  <div className="box a">
     <img src={django}></img>
     <span>Django</span>
   </div>
-  <div class="box b">
+  <div className="box b">
   <img src={tk}></img>
     <span>Tkinter</span>
   </div>
-  <div class="box c">
+  <div className="box c">
   <img src={celery}></img>
     <span>Celery</span>
   </div>
-  <div class="box d">
+  <div className="box d">
   <img src={mongo}></img>
     <span>MongoDB</span>
   </div>
-  <div class="box e">
+  <div className="box e">
   <img src={postgres}></img>
     <span>PostgreSQL</span>
   </div>
-  <div class="box f">
+  <div className="box f">
   <img src={rest}></img>
     <span>APIs</span>
   </div>
@@ -98,30 +98,30 @@ export const Frontend = (i) =>{
  animate={{ transform: "scale(1)" }}
  exit={{ transform: "scale(0)" }}
 >
-        <div class="wrapper">
-  <div class="box a">
+        <div className="wrapper">
+  <div className="box a">
   <img src={reactlogo}></img>
     <span>React</span>
     
   </div>
-  <div class="box b">
+  <div className="box b">
   <img src={redux}></img>
     <span>Redux</span>
   </div>
-  <div class="box c">
+  <div className="box c">
   <img src={jquery}></img>
     <span>JQuerry</span>
   </div>
-  <div class="box d">
+  <div className="box d">
   <img src={ajax}></img>
     <span>Ajax</span>
   
   </div>
-  <div class="box e">
+  <div className="box e">
   <img src={bootstrap}></img>
     <span>Bootstrap</span>
   </div>
-  <div class="box f">
+  <div className="box f">
   <img src={html5}></img>
     <span>HTML</span>
   </div>
@@ -144,28 +144,28 @@ export const Development = (i) =>{
  animate={{ transform: "scale(1)" }}
  exit={{ transform: "scale(0)" }}
 >
-        <div class="wrapper">
-  <div class="box a">
+        <div className="wrapper">
+  <div className="box a">
     <img src={docker}></img>
     <span>Docker</span>
   </div>
-  <div class="box b">
+  <div className="box b">
   <img src={git}></img>
     <span>Git</span>
   </div>
-  <div class="box c">
+  <div className="box c">
   <img src={nginx}></img>
     <span>Nginx</span>
   </div>
-  <div class="box d">
+  <div className="box d">
   <img src={heroku}></img>
     <span>Heroku</span>
   </div>
-  <div class="box e">
+  <div className="box e">
   <img src={gitlab}></img>
     <span>Git Lab</span>
   </div>
-  <div class="box f">
+  <div className="box f">
   <img src={yarn}></img>
     <span>YARN</span>
   </div>
@@ -188,16 +188,16 @@ export const Languages = (i) =>{
  animate={{ transform: "scale(1)" }}
  exit={{ transform: "scale(0)" }}
 >
-  <div class="wrapper lang">
-  <div class="box a common">
+  <div className="wrapper lang">
+  <div className="box a common">
     <img src={python}></img>
     <span>Python</span>
   </div>
-  <div class="box common" style={{backgroundColor: "rgb(227, 227, 43)"}}>
+  <div className="box common" style={{backgroundColor: "rgb(227, 227, 43)"}}>
   <img src={js}></img>
     <span>JavaScript</span>
   </div>
-  <div class="box common" style={{backgroundColor: "rgb(89, 155, 225)"}}>
+  <div className="box common" style={{backgroundColor: "rgb(89, 155, 225)"}}>
   <img src={ts}></img>
     <span>TypeScript</span>
   </div>
@@ -218,20 +218,20 @@ export const Tools=(i) =>{
  animate={{ transform: "scale(1)" }}
  exit={{ transform: "scale(0)" }}
 >
-  <div class="wrapper tools">
-  <div class="box a common">
+  <div className="wrapper tools">
+  <div className="box a common">
     <img src={vscode}></img>
     <span>VS Code</span>
   </div>
-  <div class="box common">
+  <div className="box common">
   <img src={postman}></img>
     <span>Postman</span>
   </div>
-  <div class="box common" style={{backgroundColor: "grey"}}>
+  <div className="box common" style={{backgroundColor: "grey"}}>
   <img src={jupyter}></img>
     <span>Jupyter</span>
   </div>
-  <div class="box common">
+  <div className="box common">
   <img src={pycharm}></img>
     <span>PyCharm</span>
   </div>

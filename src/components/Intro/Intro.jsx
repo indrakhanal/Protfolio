@@ -37,22 +37,23 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>HI! I Am</span>
+          <span>INDRA KHANAL</span>
           <TypeAnimation
           sequence={[
-            'INDRA', // Types 'One'
+            'FULL STACK DEVELOPER', // Types 'One'
             2000, // Waits 1s
-            'KHANAL', // Deletes 'One' and types 'Two'
+            'AI LEARNER', // Deletes 'One' and types 'Two'
             3000, // Waits 2s
-            'INDRA KHANAL', // Types 'Three' without deleting 'Two'
+            'PYTHON DEVELOPER', // Types 'Three' without deleting 'Two'
             () => {
               // console.log("desss")
               // DevTest() // Place optional callbacks anywhere in the array
             }
           ]}
-          wrapper="span"
+          wrapper="p"
           cursor={true}
           repeat={Infinity}
-          style={{ fontSize: '2em', display: 'inline-block' }}
+          style={{ fontSize: '1em', display: 'inline-block', color: 'white'}}
         />
           {/* <span>INDRA KHANAL</span> */}
             <div className="zoom">
