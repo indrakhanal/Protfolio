@@ -21,7 +21,7 @@ const About = () => {
        <span>
        <div className="info">
         <span>
-        <span>My Name is Indra i am from syangja, currently i'm Working as a full stack python developer at SmartTech Solutions PVT. LTD.</span>
+        <span>My Name is Indra i am from syangja, currently i'm Working as a full stack python developer at <b>Cotiviti Nepal.</b></span>
         <hr/>
         <li>Full Name: Indra Khanal</li>
         <li>Address: New Baneshor, Ktm</li>

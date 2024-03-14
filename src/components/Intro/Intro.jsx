@@ -58,9 +58,9 @@ const Intro = () => {
           {/* <span>INDRA KHANAL</span> */}
             <div className="zoom">
               <span>
-          Dynamic and detail-oriented Full Stack Developer with 3+ years of experience in developing and maintaining software applications.
-           Proficient in Python, Django, React, and PostgreSQL. Skilled in agile development methodologies and a strong believer in test-driven development. 
-           Seeking a challenging and rewarding opportunity to utilize my skills and experience to contribute to the success of a growing organization.
+              Dynamic and detail-oriented Full Stack Developer with 3+ years of experience in developing and maintaining software applications.
+              Proficient in Python, Django, React, and PostgreSQL. Skilled in agile development methodologies and a strong believer in test-driven development. 
+              Seeking a challenging and rewarding opportunity to utilize my skills and experience to contribute to the success of a growing organization.
               </span>
             </div>
          
