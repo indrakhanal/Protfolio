@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.66ee2d15.css",
-    "main.js": "/static/js/main.4e6fb593.js",
+    "main.css": "/static/css/main.9c25d9a2.css",
+    "main.js": "/static/js/main.4b88afaa.js",
     "static/media/store.PNG": "/static/media/store.9aa2b0cc142b8c4f0394.PNG",
     "static/media/prot1.PNG": "/static/media/prot1.0fff4d6c6fd752c19593.PNG",
+    "static/media/ai_icon.png": "/static/media/ai_icon.50877b7c1441d8239363.png",
+    "static/media/healthcare_icon.png": "/static/media/healthcare_icon.6c1f7140232a52ab9b59.png",
     "static/media/proto.PNG": "/static/media/proto.b77904217fcd97f61c94.PNG",
+    "static/media/angular.png": "/static/media/angular.1b656c17c28bb7e9ba98.png",
+    "static/media/indrakhanalCV__.pdf": "/static/media/indrakhanalCV__.e3ed6db9e95d7d9ae66f.pdf",
     "static/media/me.png": "/static/media/me.bd828d10174f6f7cd63f.png",
     "static/media/react_.png": "/static/media/react_.81ed438b18e24116794d.png",
-    "static/media/resume.pdf": "/static/media/resume.e827e10fa6bdf68d8466.pdf",
     "static/media/asset.PNG": "/static/media/asset.b19ec0815e62f35a8ae0.PNG",
     "static/media/tk.png": "/static/media/tk.b0430fb918d882668a5c.png",
-    "static/media/mylogo.png": "/static/media/mylogo.e948a85ca3164cb04210.png",
-    "static/media/previous.jpeg": "/static/media/previous.9181f94fab5da1c2f071.jpeg",
     "static/media/pycharm.png": "/static/media/pycharm.2dc2a2372121260274e5.png",
-    "static/media/glassesimoji.png": "/static/media/glassesimoji.a08bdab12e8eb56a6874.png",
     "static/media/jupyter.jpeg": "/static/media/jupyter.5d06346892825e08ea95.jpeg",
     "static/media/celery.png": "/static/media/celery.8c2813009cb0dbe1eaee.png",
-    "static/media/next.png": "/static/media/next.329c93742adef4ca79f6.png",
     "static/media/git.png": "/static/media/git.95e92c065c8ce5f9147a.png",
     "static/media/rest.jpeg": "/static/media/rest.925c8cba603d7000aee3.jpeg",
     "static/media/vscode.png": "/static/media/vscode.db93542ad04e4aac958e.png",
@@ -26,17 +25,14 @@
     "static/media/heartemoji.png": "/static/media/heartemoji.26b1b6ed5e0e44083b28.png",
     "static/media/redux.png": "/static/media/redux.b3b939c66aecf7d53967.png",
     "static/media/python.png": "/static/media/python.04ddea1b43164f05b756.png",
-    "static/media/wave.png": "/static/media/wave.fdfef4069ad90f610990.png",
     "static/media/glasses.png": "/static/media/glasses.71d7c1b0ff0b870a9d7d.png",
     "static/media/react.svg": "/static/media/react.4f7abcc3a4d5c559d9eb61b5f2dd5a87.svg",
     "static/media/bootstrap.svg": "/static/media/bootstrap.d180fe4cd44732fd70b35f650a76b99c.svg",
     "static/media/ts.svg": "/static/media/ts.22b4f22ec3ee32c08fb2c0a25682bb5b.svg",
-    "index.html": "/index.html",
-    "main.66ee2d15.css.map": "/static/css/main.66ee2d15.css.map",
-    "main.4e6fb593.js.map": "/static/js/main.4e6fb593.js.map"
+    "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.66ee2d15.css",
-    "static/js/main.4e6fb593.js"
+    "static/css/main.9c25d9a2.css",
+    "static/js/main.4b88afaa.js"
   ]
 }

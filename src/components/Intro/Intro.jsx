@@ -10,7 +10,7 @@ import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
-import Resume from '../Navbar/resume.pdf';
+import Resume from '../Navbar/indrakhanalCV__.pdf';
 import { TypeAnimation } from 'react-type-animation';
 
 const Intro = () => {
@@ -97,7 +97,7 @@ const Intro = () => {
             transition={transition}
             className="floating-div"
           >
-            <FloatinDiv img={crown} text1="Python" text2="Expert" />
+            <FloatinDiv img={crown} text1="Python" text2="Developer" />
           </motion.div>
 
           <motion.div
