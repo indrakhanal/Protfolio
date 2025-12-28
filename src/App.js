@@ -5,7 +5,7 @@ import "./App.css";
 import Experience from "./components/Experience/Experience";
 import Works from "./components/Works/Works";
 import Portfolio from "./components/Portfolio/Portfolio";
-import Testimonial from "./components/Testimonials/Testimonial";
+// import Testimonial from "./components/Testimonials/Testimonial";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import LabTabs from "./components/Tabbar/tabs";
@@ -18,7 +18,7 @@ function App() {
   const darkMode = theme.state.darkMode;
   return (
     <div
-      className="App"
+      className={`App ${darkMode ? "dark" : ""}`}
       style={{
         background: darkMode ? "black" : "",
         color: darkMode ? "white" : "",
@@ -26,17 +26,17 @@ function App() {
     >
       <Navbar />
       <div className="main-body">
-      <Intro />
-      <About />
-      <Experience />
-      <LabTabs />
-      <Works />
-      <WorkExperience />
-      <Services />
-      <Portfolio />
-      {/* <Testimonial /> */}
-      <Contact />
-      <Footer />
+        <Intro />
+        <About />
+        <Experience />
+        <LabTabs />
+        <Works />
+        <WorkExperience />
+        <Services />
+        <Portfolio />
+        {/* <Testimonial /> */}
+        <Contact />
+        <Footer />
       </div>
     </div>
   );

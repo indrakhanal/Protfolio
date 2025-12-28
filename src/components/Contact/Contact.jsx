@@ -2,11 +2,14 @@ import React, { useContext, useRef, useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import { themeContext } from "../../Context";
+import { motion, AnimatePresence } from "framer-motion";
+
 const Contact = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   const form = useRef();
   const [done, setDone] = useState(false)
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -22,7 +25,6 @@ const Contact = () => {
           console.log(result.text);
           setDone(true);
           e.target.reset();
-          
         },
         (error) => {
           console.log(error.text);
@@ -32,36 +34,52 @@ const Contact = () => {
 
   return (
     <div className="contact-form" id="contact">
-      {/* left side copy and paste from work section */}
-      <div className="w-left">
-        <div className="awesome">
-          {/* darkMode */}
-          <span style={{color: darkMode?'white': ''}}>Get in Touch</span>
-          <span>Contact me</span>
-          <div
-            className="blur s-blur1"
-            style={{ background: "#ABF1FF94" }}
-          ></div>
-        </div>
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+        className="contact-left"
+      >
+        <span style={{ color: darkMode ? "white" : "" }}>Get in Touch</span>
+        <h2 className="gradient-text">Contact Me</h2>
+        <p className="contact-desc">
+          Feel free to reach out for collaborations or just a friendly hello. I'm always open to discussing new projects and creative ideas.
+        </p>
+      </motion.div>
 
-        
-      </div>
-      {/* right side form */}
-      <div className="c-right">
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="from_name" className="user"  placeholder="Name"/>
-          <input type="email" name="to_name" className="user" placeholder="Email"/>
-          <textarea name="message" className="user" placeholder="Message"/>
-          <input type="submit" value="Send" className="button"/>
-          <span>{done && "Thanks for Contacting me ❤❤"}</span>
-          <div
-            className="blur c-blur1"
-            style={{ background: "var(--purple)" }}
-          ></div>
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+        className="contact-right"
+      >
+        <form ref={form} onSubmit={sendEmail} className="glass contact-form-el">
+          <div className="input-group">
+            <input type="text" name="from_name" className="user" placeholder="Your Name" required />
+          </div>
+          <div className="input-group">
+            <input type="email" name="user_email" className="user" placeholder="Your Email" required />
+          </div>
+          <div className="input-group">
+            <textarea name="message" className="user" placeholder="Your Message" required />
+          </div>
+          <button type="submit" className="button contact-btn">Send Message</button>
+          <AnimatePresence>
+            {done && (
+              <motion.span
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="success-msg"
+              >
+                Thanks for reaching out! I'll get back to you soon.
+              </motion.span>
+            )}
+          </AnimatePresence>
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 };
+
 
 export default Contact;

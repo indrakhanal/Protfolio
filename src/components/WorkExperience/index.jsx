@@ -86,10 +86,10 @@ export default function WorkExperience() {
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Live Projects Link:</li>
-                            <li><a href="https://merobaby.com/" target={"_blank"}>LINK1 &nbsp;&nbsp;</a></li>
-                            <li><a href="https://ntsagro.com/" target={"_blank"}>LINK2 &nbsp;&nbsp;</a></li>
-                            <li><a href="https://everyinches.com/" target={"_blank"}>LINK3&nbsp;&nbsp;</a></li>
-                            <li><a href="https://rupitastore.ordersathi.com/" target={"_blank"}>LINK4&nbsp;&nbsp;</a></li>
+                            <li><a href="https://merobaby.com/" target="_blank" rel="noreferrer">LINK1 &nbsp;&nbsp;</a></li>
+                            <li><a href="https://ntsagro.com/" target="_blank" rel="noreferrer">LINK2 &nbsp;&nbsp;</a></li>
+                            <li><a href="https://everyinches.com/" target="_blank" rel="noreferrer">LINK3&nbsp;&nbsp;</a></li>
+                            <li><a href="https://rupitastore.ordersathi.com/" target="_blank" rel="noreferrer">LINK4&nbsp;&nbsp;</a></li>
                         </ul>
                         <li>Smart water drinking assets management system.</li>
                         <p>The asset management tools comprising a mobile app, a web dashboard, and a configuration
@@ -116,8 +116,8 @@ export default function WorkExperience() {
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Live Projects Link:</li>
-                            <li><a href="https://assetmanagementsystem.netlify.app/#/login" target={"_blank"}>LINK1&nbsp;&nbsp;</a></li>
-                            <li><a href=" https://assetmanagementsystem.netlify.app/#/scheme/scheme-name/home" target={"_blank"}>LINK2&nbsp;&nbsp;</a></li>
+                            <li><a href="https://assetmanagementsystem.netlify.app/#/login" target="_blank" rel="noreferrer">LINK1&nbsp;&nbsp;</a></li>
+                            <li><a href=" https://assetmanagementsystem.netlify.app/#/scheme/scheme-name/home" target="_blank" rel="noreferrer">LINK2&nbsp;&nbsp;</a></li>
                         </ul>
                         <li>Logistics Management System.</li>
                         <p>In Logistics management system all the order information can be tracked until the order will not deliver to the customer including rider detail and everything about that order.</p>
@@ -178,7 +178,7 @@ export default function WorkExperience() {
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Projects Link Github:</li>
-                            <li><a href="https://github.com/indrakhanal/speech-to-text" target={"_blank"}>View Repository</a></li>
+                            <li><a href="https://github.com/indrakhanal/speech-to-text" target="_blank" rel="noreferrer">View Repository</a></li>
                         </ul>
                         <li>multi-tenant Django chat App using Web Socket.</li>
                         <p>Live chat support is a way for customers to get help through instant messaging platforms. 
@@ -196,7 +196,7 @@ export default function WorkExperience() {
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Projects Link Github:</li>
-                            <li><a href="https://github.com/indrakhanal/Multitenant-ChatApp-Django" target={"_blank"}>View Repository</a></li>
+                            <li><a href="https://github.com/indrakhanal/Multitenant-ChatApp-Django" target="_blank" rel="noreferrer">View Repository</a></li>
                         </ul>
                         <li>AI powered Chat-bot using RASA framework.</li>
                         <p>A complex chatbot system that can be customized and integrated in any website to provide contextual support in an automated and effecient way.</p>
@@ -211,7 +211,7 @@ export default function WorkExperience() {
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Projects Link Github:</li>
-                            <li><a href="https://github.com/indrakhanal/ChatBot-Rasa" target={"_blank"}>View Repository</a></li>
+                            <li><a href="https://github.com/indrakhanal/ChatBot-Rasa" target="_blank" rel="noreferrer">View Repository</a></li>
                         </ul>
                         <li>ETL with Apache Airflow.</li>
                         <p></p>
@@ -227,7 +227,7 @@ export default function WorkExperience() {
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Projects Link Github:</li>
-                            <li><a href="https://github.com/indrakhanal/ETL-example-Using-googleBigquerry" target={"_blank"}>View Repository</a></li>
+                            <li><a href="https://github.com/indrakhanal/ETL-example-Using-googleBigquerry" target="_blank" rel="noreferrer">View Repository</a></li>
                         </ul>
                         <li> Web scraping with Scrapy and Selenium</li>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
@@ -240,7 +240,7 @@ export default function WorkExperience() {
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Projects Link Github:</li>
-                            <li><a href="https://github.com/indrakhanal/web-scraping-Scrapy" target={"_blank"}>View Repository</a></li>
+                            <li><a href="https://github.com/indrakhanal/web-scraping-Scrapy" target="_blank" rel="noreferrer">View Repository</a></li>
                         </ul>
                     </ul>
                     </div>
@@ -264,7 +264,7 @@ export default function WorkExperience() {
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Projects Link Github:</li>
-                            <li><a href="https://github.com/indrakhanal/web-scraping-Scrapy" target={"_blank"}>View Repository</a></li>
+                            <li><a href="https://github.com/indrakhanal/web-scraping-Scrapy" target="_blank" rel="noreferrer">View Repository</a></li>
                         </ul>
                         <li>IPL cricket Score Prediction System using Machine learning.</li>
                         <p>In this project, I have implemented IPL live match score prediction System using Linear Regression Algorithm.
@@ -284,7 +284,7 @@ export default function WorkExperience() {
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Projects Link Github:</li>
-                            <li><a href="https://github.com/indrakhanal/web-scraping-Scrapy" target={"_blank"}>View Repository</a></li>
+                            <li><a href="https://github.com/indrakhanal/web-scraping-Scrapy" target="_blank" rel="noreferrer">View Repository</a></li>
                         </ul>
                         <li>Nepal stock market price prediction system.</li>
                         <p>In this project, I have created a machine learning model that predicts the closing price of each script according to the current market price; such as today's opening price, previous closing price, today's high value, and low value.
@@ -305,7 +305,7 @@ export default function WorkExperience() {
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Projects Link Github:</li>
-                            <li><a href="https://github.com/indrakhanal/web-scraping-Scrapy" target={"_blank"}>View Repository</a></li>
+                            <li><a href="https://github.com/indrakhanal/web-scraping-Scrapy" target="_blank" rel="noreferrer">View Repository</a></li>
                         </ul>
                         <li>TODO and PetApp .</li>
                         <p>Created a restful api for handeling todo and pet app with react as UI</p>
@@ -323,7 +323,7 @@ export default function WorkExperience() {
                         </ul>
                         <ul className="techChild" style={{paddingTop:"8px"}}>
                             <li>Projects Link Github:</li>
-                            <li><a href="https://github.com/indrakhanal/web-scraping-Scrapy" target={"_blank"}>View Repository</a></li>
+                            <li><a href="https://github.com/indrakhanal/web-scraping-Scrapy" target="_blank" rel="noreferrer">View Repository</a></li>
                         </ul>
                     </ul>
                     </div>

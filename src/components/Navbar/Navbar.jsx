@@ -1,125 +1,110 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 import { Link } from "react-scroll";
-import Resume from './resume.pdf';
-import myimage from '../../img/mylogo.png'
 import Hamburger from 'hamburger-react'
-import { useState } from "react"; 
-import { motion } from "framer-motion";
-
+import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
-  const [isOpen, setOpen] = useState(false)
-  const [isActive, setActive] = useState(true)
+  const [isOpen, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  
-  const variants = {
-    open: {
-      transition: {
-        staggerChildren: 0.07,
-        delayChildren: 0.2,
-      },
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const navLinks = [
+    { to: "Intro", label: "Home" },
+    { to: "about", label: "About" },
+    { to: "tabs", label: "Skills" },
+    { to: "wexp", label: "Experience" },
+    { to: "services", label: "Services" },
+    { to: "portfolio", label: "Portfolio" },
+    { to: "contact", label: "Contact" },
+  ];
+
+  const menuVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { staggerChildren: 0.1, delayChildren: 0.2 }
     },
-    closed: {
-      transition: {
-        staggerChildren: 0.05,
-        staggerDirection: -1,
-      },
-    },
+    exit: { opacity: 0, y: -20, transition: { duration: 0.2 } }
   };
 
   const itemVariants = {
-    open: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        x: { stiffness: 1000, velocity: -100 },
-      },
-    },
-    closed: {
-      x: -50,
-      opacity: 0,
-      transition: {
-        x: { stiffness: 1000 },
-      },
-    },
+    hidden: { opacity: 0, x: -10 },
+    visible: { opacity: 1, x: 0 }
   };
+
   return (
-    <div className="n-wrapper" id="Navbar">
-      {/* left */}
-      <Hamburger toggled={isOpen} toggle={setOpen} />
-      {/* right */}
-      {isOpen &&
-      <div className="n-right">
-      <div className="n-list">
-          <motion.ul
-            variants={variants}
-            initial="closed"
-            animate={isActive ? 'open' : 'closed'}
-            className="menu icon-menu revealator-slideup revealator-once revealator-delay1">
-            <motion.li
-             className="icon-box"
-             variants={itemVariants}
-             >
-              <Link activeClass="active" to="Navbar" spy={true} smooth={true} duration={500} offset={50}>
-              Home
-            </Link>
-            </motion.li>
-            <motion.li
-             className="icon-box"
-             variants={itemVariants}
-             >
-              <Link to="about" spy={true} smooth={true} duration={500} offset={50}>
-              About
-            </Link>
-            </motion.li>
-            <motion.li
-             className="icon-box"
-             variants={itemVariants}
-             >
-              <Link  to="tabs" spy={true} smooth={true} duration={500} offset={50}>
-              Skils
-            </Link>
-            </motion.li>
-            <motion.li
-             className="icon-box"
-             variants={itemVariants}
-             >
-              <Link  to="wexp" spy={true} smooth={true} duration={500} offset={50}>
-              Experience
-            </Link>
-            </motion.li>
-            <motion.li
-             className="icon-box"
-             variants={itemVariants}
-             >
-              <Link  to="services" spy={true} smooth={true} duration={500} offset={50}>
-              Services
-            </Link>
-            </motion.li>
-            <motion.li
-             className="icon-box"
-             variants={itemVariants}
-             >
-              <Link  to="portfolio" spy={true} smooth={true} duration={500} offset={50}>
-              Protfolio
-            </Link>
-            </motion.li>
-            <motion.li
-             className="icon-box"
-             variants={itemVariants}
-             >
-              <Link  to="contact" spy={true} smooth={true} duration={500} offset={50}>
-              Contact
-            </Link>
-            </motion.li>
-          </motion.ul>
+    <nav className={`n-wrapper ${scrolled ? "scrolled" : ""}`}>
+      <div className="n-left">
+        <div className="n-name">INDRA</div>
+        <Toggle />
       </div>
-    </div>
-      }
-      
-    </div>
+
+      {/* Desktop Menu */}
+      <div className="n-right">
+        <div className="n-list">
+          <ul>
+            {navLinks.map((link) => (
+              <li key={link.to}>
+                <Link to={link.to} spy={true} smooth={true} activeClass="active">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <Link to="contact" spy={true} smooth={true}>
+          <button className="button n-button">Contact</button>
+        </Link>
+      </div>
+
+      {/* Mobile Menu Icon */}
+      <div className="n-mobile-icon">
+        <Hamburger toggled={isOpen} toggle={setOpen} size={25} />
+      </div>
+
+      {/* Mobile Menu Overlay */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            className="n-mobile-menu glass"
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            variants={menuVariants}
+          >
+            <ul>
+              {navLinks.map((link) => (
+                <motion.li key={link.to} variants={itemVariants}>
+                  <Link
+                    to={link.to}
+                    spy={true}
+                    smooth={true}
+                    onClick={() => setOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                </motion.li>
+              ))}
+              <motion.li variants={itemVariants}>
+                <Link to="contact" spy={true} smooth={true} onClick={() => setOpen(false)}>
+                  <button className="button" style={{ width: '100%' }}>Contact Me</button>
+                </Link>
+              </motion.li>
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </nav>
   );
 };
 

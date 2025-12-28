@@ -1,122 +1,145 @@
-.Tabs-pane{
-    color: aliceblue;
-}
 .wexp {
-    padding: 0 3rem 0 3rem;
-    display: flex;
-    height: 30rem;
-    margin-bottom: 8rem;
-    margin-top: 3rem;
-    margin-bottom: 13rem;
-    /* scroll view */
-  }
-  /* left side */
-  .awesome-wexp {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    /* gap: 20px; */
-  }
-  
-  .text-wexp > :nth-child(1) {
-    color: var(--black);
-    font-size: 2.5rem;
-    font-weight: bold;
-   
-  }
-  .text-wexp > :nth-child(2) {
-    color: var(--orange);
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  .text-wexp > :nth-child(3) {
-    color: var(--gray);
-    font-size: 14px;
-    margin-top: 1rem;
-  }
-  .s-button {
-    width: 8rem;
-    height: 2rem;
-    margin-top: 1rem;
-  }
-  /* right sided */
-  .text-wexp{
-    display: flex;
-    gap:1rem
-  }
-  .content {
-    margin-left: 50px;
-    padding-top: 0px;
-  }
-  .MuiTabs-flexContainer{
-    gap:4rem;
-  }
-  .container>span{
-    font-size: 11px;
-    margin-top: -20px;
-    display: flex;
-  }
-  .tech{
-    padding: auto;
-  }
-  .tech>p{
-    font-size: 14px;
-    padding-top: 0px;
-    margin-top: 2px;
-  }
-  .tech>li{
-    /* padding: 10px;
-     */
-     margin-top: 25px;
-  }
-  .techChild>li{
-    display: inline;
-    padding: 6px !important;
-    font-size: 11px;
-    color: orange;
-  }
-  .techChild>li>a{
-    color: blue;
-    font-size: 11px;
-  }
-  .techChild{
-    margin-top: -15px;
-  }
-  .techChild > :nth-child(1) {
-    font-family: "Gumela";
-    font-weight: normal;
-    font-size: 14px;
-    color: aliceblue;
-  }
- 
-  
- 
-  
-  @media screen and (max-width: 760px) {
-    .wexp {
-      margin-top: 0;
-      flex-direction: column;
-      gap: 5rem;
-      height: 94rem;
-      padding: 0;
-    }
-    .container{
-      width: 305px;
-      margin-left: -20px;
-    }
-    .tech{
-      margin-left: -20px;
-      width: 270;
-    }
-  
-    .cards {
-      display: none;
-    }
-    .techChild{
-      margin-left: -20px;
-      /* width: 250; */
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  min-height: 600px;
+}
 
-    }
-  
+.awesome-wexp {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.text-wexp {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.text-wexp span:nth-child(2) {
+  color: var(--primary);
+}
+
+.dark .text-wexp span:nth-child(1) {
+  color: white;
+}
+
+.content {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: var(--boxShadow);
+}
+
+.dark .content {
+  background: var(--dark-glass-bg);
+  border: 1px solid var(--dark-glass-border);
+}
+
+/* MUI Tab Overrides */
+.MuiTabs-indicator {
+  background-color: var(--primary) !important;
+  height: 3px !important;
+}
+
+.MuiTab-root {
+  text-transform: none !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  transition: color 0.2s !important;
+}
+
+.MuiTab-root.Mui-selected {
+  color: var(--primary) !important;
+}
+
+.container h2 {
+  font-size: 1.8rem;
+  color: var(--black);
+  margin-bottom: 0.5rem;
+}
+
+.dark .container h2 {
+  color: white;
+}
+
+.container>span {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.tech p {
+  color: var(--gray);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.dark .tech p {
+  color: #cbd5e1;
+}
+
+.techChild {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.techChild li:first-child {
+  width: 100%;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: -0.3rem;
+}
+
+.dark .techChild li:first-child {
+  color: white;
+}
+
+.techChild li:not(:first-child) {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary);
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.techChild li a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.techChild li a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .text-wexp {
+    font-size: 2rem;
   }
-  
+
+  .content {
+    padding: 1rem;
+  }
+
+  .MuiTabs-flexContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem !important;
+  }
+}

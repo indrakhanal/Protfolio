@@ -1,99 +1,55 @@
-.Tabs-pane {
-  color: aliceblue;
-}
-
 .tabs {
-  padding: 0 3rem 0 3rem;
-  padding-top: 0px;
-  display: flex;
-  height: 11rem;
-  margin-bottom: 8rem;
-  margin-top: 0rem;
-  margin-bottom: -6rem;
-  padding-top: 0rem;
-}
-
-/* left side */
-.awesome-tab {
+  padding: 4rem 0;
   display: flex;
   flex-direction: column;
-  position: relative;
-  /* gap: 20px; */
+  gap: 3rem;
 }
 
-.text-line> :nth-child(1) {
-  color: var(--black);
-  font-size: 2.5rem;
-  font-weight: bold;
-
+.awesome-tab {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.text-line> :nth-child(2) {
-  color: var(--orange);
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.text-line> :nth-child(3) {
-  color: var(--gray);
-  font-size: 14px;
-  margin-top: 1rem;
-}
-
-.s-button {
-  width: 8rem;
-  height: 2rem;
-  margin-top: 1rem;
-}
-
-/* right sided */
 .text-line {
   display: flex;
-  gap: 1rem
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2.5rem;
+  font-weight: 800;
 }
 
-.content {
-  margin-left: 50px;
-  padding-top: 30px;
+.text-line span:nth-child(2) {
+  color: var(--primary);
 }
 
-.MuiTabs-flexContainer {
-  gap: 4rem;
+.dark .text-line span:nth-child(1) {
+  color: white;
 }
 
+.tabs .content {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: var(--boxShadow);
+  min-height: 400px;
+}
 
+.dark .tabs .content {
+  background: var(--dark-glass-bg);
+  border: 1px solid var(--dark-glass-border);
+}
 
-
-@media screen and (max-width: 767px) {
-  .tabs {
+@media screen and (max-width: 768px) {
+  .text-line {
+    font-size: 1.8rem;
     flex-direction: column;
-    gap: 5rem;
-    height: 26rem;
-    padding: 0px;
+    gap: 0.5rem;
   }
 
-  .cards {
-    display: flex;
-    flex-direction: column;
-    gap: 17rem;
-  }
-
-  .cards>* {
-    position: static;
-  }
-
-  .text-line>span {
-    display: flex;
-    gap: 1rem;
-    font-size: 23px !important;
-  }
-
-  .content {
-    margin-left: 0px !important;
-    padding-top: 0px;
-  }
-
-  .MuiTabPanel-root {
-    overflow: scroll !important;
+  .tabs .content {
+    padding: 1rem;
   }
 }

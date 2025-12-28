@@ -9,88 +9,79 @@ import { motion } from "framer-motion";
 import Resume from "../Navbar/resume.pdf"
 
 const Services = () => {
-  // context
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
-
-  // transition
-  const transition = {
-    duration: 1,
-    type: "spring",
-  };
 
   return (
     <div className="services" id="services">
       {/* left side */}
-      <div className="awesome">
-        {/* dark mode */}
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+        className="awesome"
+      >
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
-        <span>services</span>
-        <span>
-          <div className="text">
+        <h2 className="gradient-text">Services</h2>
+        <div className="services-desc">
+          <p>
+            Building high-performance, scalable web applications with a focus on clean code and exceptional user experience.
+          </p>
+          <ul>
             <li>
-              Web application development: Using React and Python to build custom web applications according to client requirements.
-              This involve creating user interfaces with React, building APIs and backend systems with Python,
-              and integrating with databases and other services.
+              <b>Web Development:</b> Full-stack applications using React, Python, and Django.
             </li>
-            <br />
             <li>
-              Data analysis and visualization:Using Python and libraries such as Pandas, NumPy and Matplotlib to perform data analysis and visualization.
-              This may include cleaning and manipulating data, creating reports, and helping clients make data-driven decisions.
+              <b>Data Analysis:</b> Processing and visualizing data with Pandas and Matplotlib.
             </li>
-          </div>
-        </span>
+          </ul>
+        </div>
         <a href={Resume} download>
-          <button className="button s-button">View Resume</button>
+          <button className="button s-button">Download CV</button>
         </a>
-        <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
-      </div>
+      </motion.div>
+
       {/* right */}
-      <div className="cards">
-        {/* first card */}
+      <div className="cards-grid">
         <motion.div
-          initial={{ left: "25rem" }}
-          whileInView={{ left: "14rem" }}
-          transition={transition}
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
         >
           <Card
             emoji={HeartEmoji}
             heading={"Design"}
-            detail={"HTML, CSS, Bootstrap"}
+            detail={"HTML5, CSS3, Bootstrap, Responsive Design"}
           />
         </motion.div>
-        {/* second card */}
+
         <motion.div
-          initial={{ left: "-11rem", top: "12rem" }}
-          whileInView={{ left: "-4rem" }}
-          transition={transition}
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
           <Card
             emoji={Glasses}
             heading={"Development"}
-            detail={"Django, Python, JavaScript, React, Ajax, JQuerry"}
+            detail={"Python, Django, React, Redux, PostgreSQL"}
           />
         </motion.div>
-        {/* 3rd */}
+
         <motion.div
-          initial={{ top: "19rem", left: "25rem" }}
-          whileInView={{ left: "12rem" }}
-          transition={transition}
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
         >
           <Card
             emoji={Humble}
-            heading={"Production"}
-            detail={
-              "GIT, Nginx, Heroku, Netlify"
-            }
-            color="rgba(252, 166, 31, 0.45)"
+            heading={"DevOps"}
+            detail={"Docker, Nginx, Git, DigitalOcean, CI/CD"}
           />
         </motion.div>
-        <div
-          className="blur s-blur2"
-          style={{ background: "var(--purple)" }}
-        ></div>
       </div>
+
+      {/* Blur background */}
+      <div className="blur-circle" style={{ background: "var(--blueCard)", top: "50%", right: "0" }}></div>
     </div>
   );
 };

@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { ThemeProvider } from './Context';
-import bootstrap from 'bootstrap'
 
 ReactDOM.render(
   <ThemeProvider>

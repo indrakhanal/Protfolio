@@ -1,57 +1,108 @@
 .contact-form {
-    padding: 0 3rem 0 3rem;
+    padding: 6rem 0;
     display: flex;
-    height: 109vh;
-    margin-top: 4rem;
-    /* scroll */
-    padding-top: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
 }
 
-.c-right {
-    display: flex;
-    justify-content: center;
-    position: relative;
+.contact-left {
     flex: 1;
-}
-
-.c-right>form {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-
+    gap: 1.5rem;
 }
 
-.c-right .user {
-    width: 20rem;
-    height: 2rem;
-    padding: 0.3em;
+.contact-left span:first-child {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.contact-desc {
+    font-size: 1.1rem;
+    color: var(--gray);
+    line-height: 1.6;
+    max-width: 400px;
+}
+
+.dark .contact-left span:first-child,
+.dark .contact-desc {
+    color: #cbd5e1;
+}
+
+.contact-right {
+    flex: 1.2;
+}
+
+.contact-form-el {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-shadow: var(--boxShadow);
+}
+
+.input-group {
+    width: 100%;
+}
+
+.user {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    font-size: 1rem;
     outline: none;
-    border: 2px solid var(--orange);
-    border-radius: 8px;
-    font-size: 16px;
+    transition: all 0.2s;
+    color: var(--black);
 }
 
-textarea {
-    height: 4rem !important;
+.dark .user {
+    background: rgba(15, 23, 42, 0.5);
+    color: white;
 }
 
-.c-blur1 {
-    top: 1rem;
-    left: 8rem;
+.user:focus {
+    border-color: var(--primary);
+    background: white;
 }
 
-@media screen and (max-width: 766px) {
+.dark .user:focus {
+    background: rgba(15, 23, 42, 0.8);
+}
+
+textarea.user {
+    min-height: 151px;
+    resize: vertical;
+}
+
+.contact-btn {
+    width: 100%;
+    padding: 1rem !important;
+    font-size: 1.1rem !important;
+}
+
+.success-msg {
+    color: #10b981;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 992px) {
     .contact-form {
-        padding: 0;
         flex-direction: column;
-        gap: 3rem;
-        height: 50rem;
-        margin-top: 10rem;
+        text-align: center;
+        padding: 4rem 0;
     }
 
-    .c-right .user {
-        width: 16rem;
+    .contact-left {
+        align-items: center;
     }
 
+    .contact-form-el {
+        padding: 2rem 1.5rem;
+    }
 }
